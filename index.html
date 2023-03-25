@@ -2,9 +2,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<title>Авторизация</title>
 </head>
 <body>
-	
+	<div class="header">
+		<img src="raccoon.png" alt="здесь был енот" class="header-icon">
+	</div>
+	<main>
+		<div class="auth-form">
+			<div class="auth-form-header">
+				<h1>Авторизация</h1>
+			</div>
+				<div class="auth-form-body mt-16">
+					<form action="#" method="post">
+						<label for="login_field" class="auth-form-label">Логин</label>
+						<input type="text" name="username" id="login_field" placeholder="Логин" class="form-control input-block mt-4 mb-16">
+						<div class="position-ralative">
+							<label for="password" class="auth-form-label">Пароль</label>
+							<input type="password" name="userpass" id="password" placeholder="Пароль" class="form-control input-block mt-4 mb-16">
+							<button type="submit" class="sign-in-button input-block">Войти</button>
+							<a class="label-link" tabindex="0" href="#">Забыли пароль?</a>
+						</div>
+					</form>
+				</div>
+			<p class="login-callout mt-16"><a href="#">Создать новый аккаунт</a>!</p>
+		</div>
+	</main>
 </body>
 </html>
